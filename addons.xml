@@ -1,33 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.adryanlist"
-       name="AdryanList"
-       version="1.8.5"
-       provider-name="Doc Shadrach">
+<addon id="plugin.video.vascartech" name="Kickass HD" version="1.0.1" provider-name="vascartech">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.repository" name="vascartech Autoupdate Repository">
+        <info compressed="false"></info>
+        <checksum></checksum>
+        <datadir zip="true"></datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <website><![CDATA[]]></website>
+        <forum><![CDATA[]]></forum>
+        <source><![CDATA[]]></source>
+        <language></language>
+        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
+        <summary><![CDATA[p2p: Torrent streaming en XBMC.]]></summary>
+        <description><![CDATA[Reprodusca torrents directamente de XBMC.
+
+Ultimas actualizaciones y modificaciones:
+Twitter: twitter.com/vascartech-inc.com
+Facebook: facebook.com/VascarTech/inc.com]]></description>
+    </extension>
+</addon>
+
+<addon id="script.torrent.pulsar" name="Play Torrent directo" version="0.0.3" provider-name="vascartech">
+	<requires>
+		<import addon="xbmc.python" version="2.12.0"/>
+        <import addon="plugin.video.pulsar" version="0.3.1"/>
+	</requires>
+	<extension point="xbmc.python.script" library="main.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Play Torrent</summary>
+		<description lang="en">Reproductor directo de archivos torrent</description>
+		<language></language>
+		<platform>all</platform>
+		<forum>Descarge archivos Torrent desde las siguientes wueb: http://yify-movie.com :  https://kickass.unblocked.la/search/yify%201080p/</forum>
+		<disclaimer lang="en">Descarge torrent desde su web preferida.</disclaimer>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	</extension>
+</addon>
+
+<addon id="plugin.stream.vaughnlive.tv"
+       name="Vaughn Live"
+       version="0.1.8"
+       provider-name="The[COLOR tan]Highway[/COLOR], Shani, konbon">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
+  	<import addon="xbmc.python" version="2.1.0"/>
+  	<import addon="script.module.addon.common" />
+  	<import addon="script.common.plugin.cache" />
+  	<import addon="script.module.t0mm0.common" optional="true" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
+  	<provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>based on livestreamspro 1.8.5 by Shani</summary>
-    <description>Lista de canales de Adriahn</description>
-    <platform>all</platform>
+  	<summary>For PC with a Default Browser.  Streams are now playable in KODI (XBMC). Thanks to konbon for the new artwork.</summary>
+  	<description>Used to browse the site of Live Streams and allow you to launch your OS's default browser via XBMC's context menu(s) so to visit the channel's page, embed video, or embed chat.  Streams are now playable in KODI (XBMC).</description>
+  	<disclaimer>By using this, you take reponsibility for anything that happens.</disclaimer>
+  	<language>en</language>
+  	<platform>all</platform>
+    <forum></forum>
+    <website></website>
+    <source></source>
+    <email></email>
   </extension>
 </addon>
 
-<addon id="plugin.video.genesis" name="Genesis" version="5.2.0" provider-name="lambda">
+<addon id="plugin.video.crackle2fg"
+       name="Crackle2*"
+       version="0.2.3fg6"
+       provider-name="newatv2user - hacked by foreverguest">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.common.plugin.cache" version="0.9.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Crackle</summary>
+    <description lang="en">Shows and Movies from Crackle.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.genesis" name="Genesis" version="5.2.1" provider-name="lambda">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.requests" version="1.0.0" />
@@ -49,7 +114,30 @@
 	</extension>
 </addon>
 
-<addon id="repository.freelandoficial" name="FrreLand Streamig Box" version="1.0.0" provider-name="FreeLand">
+<addon id="plugin.video.pulsar" name="Pulsar" version="0.6.3" provider-name="steeve">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en</language>
+        <website><![CDATA[https://github.com/steeve/plugin.video.pulsar]]></website>
+        <forum><![CDATA[http://forum.xbmc.org/showthread.php?tid=200957]]></forum>
+        <source><![CDATA[https://github.com/steeve/plugin.video.pulsar]]></source>
+        <language>en</language>
+        <license><![CDATA[Non commercial. See https://github.com/steeve/plugin.video.pulsar/blob/master/LICENSE]]></license>
+        <summary><![CDATA[Pulsar: Universal streaming]]></summary>
+        <description><![CDATA[Follow @pulsarhq on Twitter]]></description>
+    </extension>
+</addon>
+
+<addon id="repository.freeland" name="FreeLand Streamig Box" version="1.0.1" provider-name="FreeLand">
 	<extension point="xbmc.addon.repository" name="Repo Oficial de FreeLand Streaming Box">
 		<info compressed="false">https://raw.github.com/aljota/Freeland-Actualizaciones/master/addons.xml</info>
 		<checksum>https://raw.github.com/aljota/Freeland-Actualizaciones/master/addons.xml.md5</checksum>
@@ -63,26 +151,88 @@
 	</extension>
 </addon>
 
-<addon
-  id="skin.confluencefreeland"
-  version="2.5.12"
-  name="Confluence Free Land Streaming Box"
-  provider-name="Vascartech">
+<addon id="repository.whitecream" name="WhiteCream repo" version="0.0.1" provider-name="mortael">
+	<extension point="xbmc.addon.repository" name="WhiteCream repo">
+		<info compressed="false">http://raw.github.com/whitecream01/WhiteCream-V0.0.1/master/addons.xml</info>
+		<checksum>http://raw.github.com/whitecream01/WhiteCream-V0.0.1/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/whitecream01/WhiteCream-V0.0.1/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The Official WhiteCream repository</summary>
+		<description>This repository contains addons that are for adults only. You may only view the contents of this repository if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.keymap"
+       name="Configuracion de control remoto o teclado"
+       version="1.2.1"
+       provider-name="FreeLand">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="main.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Editor de mandos</summary>
+        <description lang="en">El editor del mando FreeLand le permite configurar las teclas de su control o teclado multimedia a su antojo.</description>
+        <platform>all</platform>
+        <language/>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum></forum>
+        <source></source>
+    </extension>
+</addon>
+
+<addon id="script.navi-x"
+       name="Navi-X"
+       version="4.0"
+       provider-name="Team Navi-X and TVADDONS.ag">
   <requires>
-    <import addon="xbmc.gui" version="5.3.0"/>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.urlresolver"  />
+    <import addon="script.module.t0mm0.common"  />
+    <import addon="script.module.addon.common" optional="false" />
+    <import addon="repository.xbmchub" optional="true" />
+    <import addon="plugin.video.youtube" optional="false" />
   </requires>
-  <extension
-    point="xbmc.gui.skin"
-    defaultthemename="textures.xbt"
-    debugging="false"
-    effectslowdown="0.75">
-    <res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+  <extension point="xbmc.python.script" library="default.py" >
+    <provides>executable video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup">
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">Confluence skin por Vascartech-inc.com</summary>
-    <description lang="es">Confluence es la skin por defecto de Kodi 9.11 y posteriores. Es una combinación de conceptos de muchas skins populares, e intenta abarcar e integrar lo mejor de ellas en una skin que sea sencilla de entender y utilizar para los nuevos usuarios de Kodi.</description>
-    <disclaimer lang="es">Confluence es el skin por defecto de Kodi FreeLand Streaming Box. Borrarlo puede causar problemas</disclaimer>
     <platform>all</platform>
+    <minversion>28764</minversion>
+    <summary>Media Browser Addon for Kodi</summary>
+    <description>Navi-X is the oldest and most trusted add-on for Kodi, used by millions of people worldwide. You'll find everything from live television to your favourite movies and television shows, easily accessible.</description>
+    <disclaimer>http://www.navixtreme.com/terms/</disclaimer>
+    <forum>http://forums.tvaddons.ag/forums/38-NAVI-X-MEDIA-BROWSER-FOR-KODI</forum>
+    <website>http://www.navixtreme.com/</website>
+    <source></source>
+    <email></email>
+  </extension>
+</addon>
+
+<addon id="service.subtitles.opensubtitlesBeta"
+       name="OpenSubtitles.org (Unofficial)"
+       version="5.0.15"
+       provider-name="amet,Mafarricos">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.subtitle.module"
+             library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">OpenSubtitles (Unofficial)</summary>
+    <description lang="en">Search and download subtitles from opensubtitles.org. This unofficial version permits to choose preference language in results</description>
+    <disclaimer lang="en"></disclaimer>
+    <summary lang="pt">OpenSubtitles (Não Oficial)</summary>
+    <description lang="pt">Pesquisa e download de legendas de opensubtitles.org. Esta versão não oficial permite nas definições escolher o idioma para apresentar legendas primeiro</description>
+    <disclaimer lang="pt"></disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <source>https://github.com/Mafarricos/service.subtitles.opensubtitles</source>
   </extension>
 </addon>
 </addons>

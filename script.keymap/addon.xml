@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.keymap"
+       name="Configuracion de control remoto o teclado"
+       version="1.2.1"
+       provider-name="FreeLand">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="main.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Editor de mandos</summary>
+        <description lang="en">El editor del mando FreeLand le permite configurar las teclas de su control o teclado multimedia a su antojo.</description>
+        <platform>all</platform>
+        <language/>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum></forum>
+        <source></source>
+    </extension>
+</addon>

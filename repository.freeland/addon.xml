@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.freeland" name="FreeLand Streamig Box" version="1.0.1" provider-name="FreeLand">
+	<extension point="xbmc.addon.repository" name="Repo Oficial de FreeLand Streaming Box">
+		<info compressed="false">https://raw.github.com/aljota/Freeland-Actualizaciones/master/addons.xml</info>
+		<checksum>https://raw.github.com/aljota/Freeland-Actualizaciones/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/aljota/Freeland-Actualizaciones/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodi-chile official Repo</summary>
+   		<description lang="en">Instala los Addons de Kodi chile.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
