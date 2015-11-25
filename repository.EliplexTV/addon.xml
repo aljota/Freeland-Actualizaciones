@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.EliplexTV" name="[COLOR red]EliplexTV Repository Official[/COLOR]" version="1.0.1" provider-name="EliplexTV">
+	<extension point="xbmc.addon.repository" name="[COLOR red]EliplexTV Repository Official[/COLOR]">
+		<info compressed="false">https://raw.github.com/eliesel02/EliplextvRepository/master/addons.xml</info>
+		<checksum>https://raw.github.com/eliesel02/EliplextvRepository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/eliesel02/EliplextvRepository/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>[COLOR red]EliplexTV Repository Official[/COLOR]</summary>
+   		<description lang="en">Instala los Addons de Kodi EliplexTV Y Wolf-Team</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

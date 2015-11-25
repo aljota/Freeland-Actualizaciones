@@ -1,52 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.vascartech" name="Kickass HD" version="1.0.1" provider-name="vascartech">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.repository" name="vascartech Autoupdate Repository">
-        <info compressed="false"></info>
-        <checksum></checksum>
-        <datadir zip="true"></datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <website><![CDATA[]]></website>
-        <forum><![CDATA[]]></forum>
-        <source><![CDATA[]]></source>
-        <language></language>
-        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <summary><![CDATA[p2p: Torrent streaming en XBMC.]]></summary>
-        <description><![CDATA[Reprodusca torrents directamente de XBMC.
-
-Ultimas actualizaciones y modificaciones:
-Twitter: twitter.com/vascartech-inc.com
-Facebook: facebook.com/VascarTech/inc.com]]></description>
-    </extension>
-</addon>
-
-<addon id="script.torrent.pulsar" name="Play Torrent directo" version="0.0.3" provider-name="vascartech">
-	<requires>
-		<import addon="xbmc.python" version="2.12.0"/>
-        <import addon="plugin.video.pulsar" version="0.3.1"/>
-	</requires>
-	<extension point="xbmc.python.script" library="main.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Play Torrent</summary>
-		<description lang="en">Reproductor directo de archivos torrent</description>
-		<language></language>
-		<platform>all</platform>
-		<forum>Descarge archivos Torrent desde las siguientes wueb: http://yify-movie.com :  https://kickass.unblocked.la/search/yify%201080p/</forum>
-		<disclaimer lang="en">Descarge torrent desde su web preferida.</disclaimer>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	</extension>
-</addon>
-
 <addon id="plugin.stream.vaughnlive.tv"
        name="Vaughn Live"
        version="0.1.8"
@@ -135,6 +88,20 @@ Facebook: facebook.com/VascarTech/inc.com]]></description>
         <summary><![CDATA[Pulsar: Universal streaming]]></summary>
         <description><![CDATA[Follow @pulsarhq on Twitter]]></description>
     </extension>
+</addon>
+
+<addon id="repository.EliplexTV" name="[COLOR red]EliplexTV Repository Official[/COLOR]" version="1.0.1" provider-name="EliplexTV">
+	<extension point="xbmc.addon.repository" name="[COLOR red]EliplexTV Repository Official[/COLOR]">
+		<info compressed="false">https://raw.github.com/eliesel02/EliplextvRepository/master/addons.xml</info>
+		<checksum>https://raw.github.com/eliesel02/EliplextvRepository/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.github.com/eliesel02/EliplextvRepository/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>[COLOR red]EliplexTV Repository Official[/COLOR]</summary>
+   		<description lang="en">Instala los Addons de Kodi EliplexTV Y Wolf-Team</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.freeland" name="FreeLand Streamig Box" version="1.0.1" provider-name="FreeLand">
